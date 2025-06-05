@@ -1,11 +1,11 @@
 /// Map implemented as a linked-list of key-value pairs ("Associations").
 /// 
-/// :::note [Usage context]
+/// :::note Usage context
 /// 
 /// This map implementation primarily serves as the underlying bucket structure for other map types. In most cases, those higher-level map implementations are easier to use.
 /// :::
 /// 
-/// :::note [Assumptions]
+/// :::note Assumptions
 /// 
 /// Runtime and space complexity assumes that `combine`, `equal`, and other functions execute in `O(1)` time and space.
 /// :::
@@ -166,7 +166,7 @@ module {
     rec(map1)
   };
 
-  /// :::warning [Deprecated function]
+  /// :::warning Deprecated function
   /// 
   /// `mapAppend` is deprecated and may be removed in future versions. Consider using an alternative approach.
   /// :::
@@ -244,7 +244,7 @@ module {
   /// them using `combine`. `combine` is also used to combine the values of colliding keys.
   /// Keys are compared using the given `equal` function.
   /// 
-  /// :::note [Behaviour guarantee]
+  /// :::note Behaviour guarantee
   /// 
   /// `combine` will never be applied to `(null, null)`.
   /// 

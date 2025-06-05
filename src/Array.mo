@@ -8,7 +8,7 @@
 /// 
 /// :::
 /// 
-/// :::note [Assumptions]
+/// :::note Assumptions
 /// 
 /// Runtime and space complexity assumes that `generator`, `equal`, and other functions execute in `O(1)` time and space.
 /// :::
@@ -169,7 +169,7 @@ module {
 
   /// Create a new array by appending the values of `array1` and `array2`.
   /// 
-  /// :::note [Efficient appending]
+  /// :::note Efficient appending
   /// 
   /// `Array.append` copies its arguments and runs in linear time.
   /// For better performance in loops, consider using `Buffer` and `Buffer.append` instead.
@@ -648,7 +648,7 @@ module {
   /// Iterator provides a single method `next()`, which returns
   /// elements in order, or `null` when out of elements to iterate over.
   /// 
-  /// :::note [Alternative approach]
+  /// :::note Alternative approach
   /// 
   /// Alternatively, you can use `array.size()` to achieve the same result. See the example below.
   /// :::
@@ -671,7 +671,7 @@ module {
   /// Iterator provides a single method `next()`, which returns
   /// indices in order, or `null` when out of index to iterate over.
   /// 
-  /// :::note [Alternative approach]
+  /// :::note Alternative approach
   /// You can also use `array.keys()` instead of this function. See example
   /// below.
   /// 
@@ -693,7 +693,7 @@ module {
 
   /// Returns the size of `array`.
   /// 
-  /// :::note [Alternative approach]
+  /// :::note Alternative approach
   /// 
   /// Alternatively, you can use `array.size()` to achieve the same result. See the example below.
   /// :::
@@ -710,7 +710,7 @@ module {
 
   /// Returns a new subarray from the given array provided the start index and length of elements in the subarray.
   /// 
-  /// :::note [Limitations]
+  /// :::note Limitations
   ///  Traps if the start index + length is greater than the size of the array.
   /// :::
   /// 

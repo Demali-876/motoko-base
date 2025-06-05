@@ -1,12 +1,12 @@
 /// Byte-level access to (virtual) _stable memory_.
 /// 
-/// :::warning [Experimental module]
+/// :::warning Experimental module
 /// 
 /// As the name suggests, this library is experimental, subject to change, and may be replaced by safer alternatives in later versions of Motoko.
 /// Use at your own risk and discretion.
 /// :::
 /// 
-/// :::warning [Deprecation notice]
+/// :::warning Deprecation notice
 /// 
 /// Use of `ExperimentalStableMemory` may be deprecated in the future.
 /// Consider using `Region.mo` for isolated memory regions.
@@ -30,7 +30,7 @@
 /// 
 /// The current page allocation and contents are preserved across upgrades.
 /// 
-/// :::note [IC stable memory discrepancy]
+/// :::note IC stable memory discrepancy
 /// 
 /// The IC’s reported stable memory size (`ic0.stable_size`) may exceed what Motoko’s `size()` returns.
 /// This and the growth cap exist to protect Motoko’s internal use of stable variables.

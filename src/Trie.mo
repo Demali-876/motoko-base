@@ -6,11 +6,11 @@
 /// 
 /// For imperative or object-oriented alternatives, see [`TrieMap`](../TrieMap) or [`HashMap`](../HashMap).
 /// 
-/// :::warning [Hash collision limit]
+/// :::warning Hash collision limit
 /// Each trie node supports at most 8 distinct keys with the same hash (`MAX_LEAF_SIZE = 8`). Exceeding this will cause a trap.
 /// :::
 /// 
-/// :::info [Credits]
+/// :::info Credits
 /// Based on Section 6 of ["Incremental computation via function caching", Pugh & Teitelbaum](https://dl.acm.org/citation.cfm?id=75305).
 /// :::
 /// 
@@ -147,7 +147,7 @@ module {
   ///  Equality function for two `Key<K>`s, in terms of equality of `K`'s.
   public func equalKey<K>(keq : (K, K) -> Bool) : ((Key<K>, Key<K>) -> Bool) = func(key1 : Key<K>, key2 : Key<K>) : Bool = Hash.equal(key1.hash, key2.hash) and keq(key1.key, key2.key);
 
-  /// :::warning [Deprecated function]
+  /// :::warning Deprecated function
   /// `isValid` is an internal predicate and will be removed in future.
   /// :::
   public func isValid<K, V>(t : Trie<K, V>, _enforceNormal : Bool) : Bool {

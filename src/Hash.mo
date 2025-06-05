@@ -21,7 +21,7 @@ module {
     ha == hb
   };
 
-  /// :::warning [Deprecated function]
+  /// :::warning Deprecated function
   /// This function computes a hash from the least significant 32 bits of `n`, ignoring other bits.
   /// For large `Nat` values, consider using a bespoke hash function that considers all of the argument's bits.
   /// :::
@@ -35,7 +35,7 @@ module {
     ])
   };
 
-  /// :::warning [Deprecated function]
+  /// :::warning Deprecated function
 
   /// This function will be removed in a future version.
   /// :::
@@ -49,7 +49,7 @@ module {
     }
   };
 
-  /// :::warning [Deprecated function]
+  /// :::warning Deprecated function
 
   /// This function will be removed in a future version.
   /// :::
@@ -69,7 +69,7 @@ module {
   /// The input type should actually be `[Nat8]`.
   /// Be sure to explode each `Nat8` of a `Nat32` into its own `Nat32`, and shift into the lower 8 bits.
   /// :::
-  /// :::warning [Deprecated function]
+  /// :::warning Deprecated function
 
   /// This function may be removed or changed in a future version.
   /// :::

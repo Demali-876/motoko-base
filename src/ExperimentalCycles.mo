@@ -3,13 +3,13 @@
 /// The usage of the Internet Computer is measured, and paid for, in _cycles_.
 /// This library provides imperative operations for observing cycles, transferring cycles, and observing refunds of cycles.
 /// 
-/// :::warning [Experimental API]
+/// :::warning Experimental API
 /// 
 /// This low-level API is experimental and may change or be removed in the future.
 /// Dedicated syntactic support for manipulating cycles may be added to the language, which would make this library obsolete.
 /// :::
 /// 
-/// :::note [Volatile cycle balance]
+/// :::note Volatile cycle balance
 /// 
 /// Since cycles measure computational resources, the value of `balance()` can change from one call to the next.
 /// :::
@@ -109,7 +109,7 @@ module {
   ///  the last call is deducted from `balance()`.
   ///  If this total exceeds `balance()`, the caller traps, aborting the call.
   /// 
-  /// :::note [Reset behaviour]
+  /// :::note Reset behaviour
   /// 
   /// The implicit register of added amounts is reset to zero on entry to a shared function and after each shared function call or resume from an await.
   /// :::

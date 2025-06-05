@@ -2,25 +2,25 @@
 /// The class wraps and manipulates an underlying hash trie, found in the `Trie` module.
 /// The trie is a binary tree where element positions are determined using the hash of the keys.
 /// 
-/// :::warning [Limitations]
+/// :::warning Limitations
 /// 
 /// This data structure allows at most `MAX_LEAF_SIZE = 8` hash collisions.
 /// Attempts to insert more than 8 keys (whether directly via `put` or indirectly via other operations) with the same hash value will trap.
 /// This limitation is inherited from the underlying `Trie` data structure.
 /// :::
 /// 
-/// :::note [Interface compatibility]
+/// :::note Interface compatibility
 /// 
 /// The `class` `TrieMap` exposes the same interface as `HashMap`.
 /// :::
 /// 
-/// :::note [Assumptions]
+/// :::note Assumptions
 /// 
 /// Runtime and space complexity assumes that `hash`, `equal`, and other function parameters execute in `O(1)` time and space.
 /// Where applicable, runtimes also assume the trie is reasonably balanced.
 /// :::
 /// 
-/// :::note [Iterator performance]
+/// :::note Iterator performance
 /// 
 /// All iterator-related runtime and space costs refer to iterator construction.
 /// The iteration itself takes linear time and logarithmic space to execute.

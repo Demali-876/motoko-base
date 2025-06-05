@@ -1,18 +1,18 @@
 /// Timers for one-off or periodic tasks. Applicable as part of the default mechanism.
 /// 
-/// :::note [Timer resolution]
+/// :::note Timer resolution
 /// 
 /// The resolution of the timers is in the order of the block rate,
 /// so durations should be chosen well above that. For frequent
 /// canister wake-ups the heartbeat mechanism should be considered.
 /// :::
 /// 
-/// :::note [Overriding system function]
+/// :::note Overriding system function
 /// 
 /// The functionality described below is enabled only when the actor does not override it by declaring an explicit `system func timer`.
 /// :::
 /// 
-/// :::note [Upgrade persistence]
+/// :::note Upgrade persistence
 /// 
 /// Timers are _not_ persisted across upgrades. One possible strategy
 /// to re-establish timers after an upgrade is to walk stable variables
@@ -20,7 +20,7 @@
 /// from there.
 /// :::
 /// 
-/// :::note [Security warning]
+/// :::note Security warning
 /// 
 /// Basing security (e.g. access control) on timers is almost always the wrong choice.
 /// Be sure to inform yourself about state-of-the-art dApp security.
@@ -28,12 +28,12 @@
 /// and the vanishing of timers on upgrades and reinstalls.
 /// :::
 /// 
-/// :::note [Further information]
+/// :::note Further information
 /// 
 /// [Further usage information for timers](https://internetcomputer.org/docs/current/developer-docs/backend/periodic-tasks#timers-library-limitations).
 /// :::
 /// 
-/// :::note [Compilation flag]
+/// :::note Compilation flag
 /// 
 /// If `moc` is invoked with `-no-timer`, the importing will fail.
 /// :::

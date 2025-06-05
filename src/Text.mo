@@ -868,7 +868,7 @@ module {
 
   ///  Returns the text argument in lowercase.
   /// 
-  /// :::warning [Compliance]
+  /// :::warning Compliance
   ///  Unicode compliant only when compiled, not interpreted.
   /// :::
   /// 
@@ -878,7 +878,7 @@ module {
   public let toLowercase : Text -> Text = Prim.textLowercase;
 
   ///  Returns the text argument in uppercase. Unicode compliant.
-  /// :::warning [Compliance]
+  /// :::warning Compliance
   ///  Unicode compliant only when compiled, not interpreted.
   /// :::
   /// 

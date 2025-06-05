@@ -499,7 +499,7 @@ module {
   public let fromInt : Int -> Float = Prim.intToFloat;
 
   ///  Returns `x == y`.
-  /// :::warning [Deprecated function]
+  /// :::warning Deprecated function
   /// Use `Float.equalWithin()` as this function does not consider numerical errors.
   /// :::
   public func equal(x : Float, y : Float) : Bool { x == y };

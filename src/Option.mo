@@ -135,7 +135,7 @@ module {
     case (_, _) { false }
   };
 
-  ///  :::warning [Deprecated function]
+  ///  :::warning Deprecated function
   /// 
   /// `Option.assertSome` will be removed soon. Use an `assert` expression instead.
   /// 
@@ -145,7 +145,7 @@ module {
     case _ {}
   };
 
-  /// :::warning [Deprecated function]
+  /// :::warning Deprecated function
   /// 
   /// `Option.assertNull` will be removed soon. Use an `assert` expression instead.
   /// :::
@@ -154,7 +154,7 @@ module {
     case _ { P.unreachable() }
   };
 
-  /// :::warning [Deprecated function]
+  /// :::warning Deprecated function
   /// 
   /// `Option.unwrap` is unsafe and will be removed soon. Use a `switch` or `do?` expression instead.
   /// :::

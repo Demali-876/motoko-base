@@ -11,18 +11,18 @@
 /// 
 /// `n` denotes the number of key-value entries (i.e. nodes) stored in the tree.
 /// 
-/// :::note [Garbage collection]
+/// :::note Garbage collection
 /// 
 /// Unless stated otherwise, operations that iterate over or modify the map (such as insertion, deletion, traversal, and transformation) may create temporary objects with worst-case space usage of `O(log(n))` or `O(n)`. These objects are short-lived and will be collected by the garbage collector automatically.
 /// 
 /// :::
 /// 
-/// :::note [Assumptions]
+/// :::note Assumptions
 /// 
 /// Runtime and space complexity assumes that `compare`, `equal`, and other functions execute in `O(1)` time and space.
 /// :::
 /// 
-/// :::info [Credits]
+/// :::info Credits
 /// 
 /// The core of this implementation is derived from:
 /// 

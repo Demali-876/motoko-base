@@ -23,7 +23,7 @@
 ///  }
 ///  ```
 /// 
-/// :::note [Performance]
+/// :::note Performance
 ///  * Runtime: `O(log(n))` worst case cost per insertion, removal, and retrieval operation.
 ///  * Heap space: `O(n)` for storing the entire tree.
 ///  * Stack space: `O(log(n)) for storing the entire tree.
@@ -34,7 +34,7 @@
 ///  Tree insertion, replacement, and removal produce `O(log(n))` garbage objects.
 /// :::
 /// 
-/// :::info [Credits]
+/// :::info Credits
 ///  The core of this implementation is derived from:
 /// 
 ///  * Ken Friis Larsen's [RedBlackMap.sml](https://github.com/kfl/mosml/blob/master/src/mosmllib/Redblackmap.sml), which itself is based on:

@@ -12,7 +12,7 @@
 /// 
 /// Construction: Create a new deque with the `empty<T>()` function.
 /// 
-/// :::note [Performance characteristics]
+/// :::note Performance characteristics
 /// 
 /// Push and pop operations have `O(1)` amortized cost and `O(n)` worst-case cost per call.
 /// Space usage follows the same pattern.

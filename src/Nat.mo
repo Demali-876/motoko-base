@@ -5,7 +5,7 @@
 /// This module provides equivalent functions and `Text` conversion.
 /// :::
 /// 
-/// :::info [Function form for higher-order use]
+/// :::info Function form for higher-order use
 /// 
 /// Several arithmetic and comparison functions (e.g. `add`, `sub`, `equal`, `less`, `pow`) are defined in this module to enable their use as first-class function values, which is not possible with operators like `+`, `-`, `==`, etc., in Motoko. This allows you to pass these operations to higher-order functions such as `map`, `foldLeft`, or `sort`.
 /// :::

@@ -19,7 +19,7 @@
 /// 
 /// Then, you can use this module to work with the `Principal`.
 /// 
-/// :::note [Comparison usage]
+/// :::note Comparison usage
 /// 
 /// These functions are defined in this library in addition to the existing comparison operators so that they can be passed as function values to higher-order functions. It is currently not possible to use operators such as `==`, `!=`, `<`, `<=`, `>`, or `>=` as function values directly.
 /// :::

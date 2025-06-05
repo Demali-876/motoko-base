@@ -2,7 +2,7 @@
 /// Sets are partial maps from element type to unit type,
 /// i.e., the partial map represents the set with its domain.
 /// 
-/// :::warning [Limitations]
+/// :::warning Limitations
 /// 
 /// This data structure allows at most `MAX_LEAF_SIZE = 8` hash collisions.
 /// Attempts to insert more than 8 elements with the same hash value—either directly via `put` or indirectly via other operations—will trap.
@@ -111,7 +111,7 @@ module {
     return true
   };
 
-  /// :::warning [ Deprecated function ]
+  /// :::warning  Deprecated function 
   /// Use `TrieSet.contains()` instead.
   /// :::
   /// 

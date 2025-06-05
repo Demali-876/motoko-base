@@ -1,7 +1,7 @@
 /// Purely-functional, singly-linked lists.
 /// A list of type `List<T>` is either `null` or an optional pair of a value of type `T` and a tail, itself of type `List<T>`.
 /// 
-/// :::note [Assumptions]
+/// :::note Assumptions
 /// 
 /// Runtime and space complexity assumes that `equal`, and other functions execute in `O(1)` time and space.
 /// :::
@@ -122,7 +122,7 @@ module {
   };
   /// Access any item in a list, zero-based.
   /// 
-  /// :::note [Consideration]
+  /// :::note Consideration
   ///  Indexing into a list is a linear operation, and usually an
   /// indication that a list might not be the best data structure
   /// to use.

@@ -5,7 +5,7 @@
 /// Internally, the map is backed by an array of `AssocList` (buckets).
 /// The array doubles in size when the expected bucket list size grows beyond a fixed threshold.
 /// 
-/// :::warning [Performance considerations]
+/// :::warning Performance considerations
 /// 
 /// Certain operations, such as `put`, are amortized `O(1)` but can run in worst-case `O(size)` time.
 /// These worst cases may exceed the cycle limit per message on large maps.
@@ -14,12 +14,12 @@
 /// 
 /// :::
 /// 
-/// :::note [Non-amortized alternative]
+/// :::note Non-amortized alternative
 /// 
 /// For maps without amortization, see `TrieMap`.
 /// :::
 /// 
-/// :::info [Constructor note]
+/// :::info Constructor note
 /// 
 /// The `initCapacity` argument sets the initial number of buckets.
 /// All runtime and space complexities assume that the equality and hash functions run in `O(1)` time and space.
@@ -109,7 +109,7 @@ module {
     /// | Runtime(amortized) | Runtime(worst) | Space (amortized) | Space(worst)
     /// |----------------------------|--------------------|---------------------------|------------------|
     /// | `O(1)`                     | `O(size)`          | `O(1)`                    | `O(size)`        |
-    /// :::note [Initial allocation]
+    /// :::note Initial allocation
     /// 
     /// This operation triggers the allocation of the underlying array if it is the first entry in the map.
     /// :::
@@ -129,7 +129,7 @@ module {
     /// |----------------------------|--------------------|---------------------------|------------------|
     /// | `O(1)`                     | `O(size)`          | `O(1)`                    | `O(size)`        |
     /// 
-    /// :::note [Initial allocation]
+    /// :::note Initial allocation
     /// 
     /// This operation triggers the allocation of the underlying array if it is the first entry in the map.
     /// :::

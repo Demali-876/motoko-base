@@ -5,13 +5,13 @@
 /// 
 /// Like arrays, buffer elements are indexed from `0` to `size - 1`.
 /// 
-/// :::note [Assumptions]
+/// :::note Assumptions
 /// 
 /// Runtime and space complexity assumes that `combine`, `equal`, and other functions execute in `O(1)` time and space.
 /// 
 /// :::
 /// 
-/// :::note [Size vs capacity]
+/// :::note Size vs capacity
 /// 
 /// - `size`: Number of elements in the buffer.
 /// - `capacity`: Length of the underlying array.
@@ -19,14 +19,14 @@
 /// The invariant `capacity >= size` always holds.
 /// :::
 /// 
-/// :::warning [Performance caveat]
+/// :::warning Performance caveat
 /// 
 /// Operations like `add` are amortized `O(1)` but can take `O(n)` in the worst case.
 /// For large buffers, these worst cases may exceed the cycle limit per message.
 /// Use with care when growing buffers dynamically.
 /// :::
 /// 
-/// :::info [Constructor behavior]
+/// :::info Constructor behavior
 /// 
 /// The `initCapacity` argument sets the initial capacity of the underlying array.
 /// 
@@ -215,7 +215,7 @@ module {
     /// 
     /// Traps if index >= size.
     /// 
-    /// :::warning [Inefficient pattern]
+    /// :::warning Inefficient pattern
     /// 
     /// Repeated removal of elements using this method is inefficient and may indicate that a different data structure would better suit your use case.
     /// :::
@@ -686,7 +686,7 @@ module {
 
     // FOLLOWING METHODS ARE DEPRECATED
 
-    /// :::warning [Deprecated function]
+    /// :::warning Deprecated function
     /// 
     /// Use the static library function instead of this instance method.
     /// :::
@@ -698,7 +698,7 @@ module {
       newBuffer
     };
 
-    /// :::warning [Deprecated function]
+    /// :::warning Deprecated function
     /// 
     /// Use the static library function instead of this instance method.
     /// :::
@@ -709,7 +709,7 @@ module {
       func(i : Nat) : X { get i }
     );
 
-    /// :::warning [Deprecated function]
+    /// :::warning Deprecated function
     /// 
     /// Use the static library function instead of this instance method.
     /// :::

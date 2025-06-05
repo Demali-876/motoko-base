@@ -8,7 +8,7 @@
 /// import Blob "mo:base/Blob";
 /// ```
 /// 
-/// :::note [Additional features]
+/// :::note Additional features
 /// 
 /// Some built-in features are not listed in this module:
 /// 
@@ -30,7 +30,7 @@
 ///   Debug.print(Nat8.toText(byte))
 /// }
 /// ```
-/// :::note [Operator limitation]
+/// :::note Operator limitation
 /// 
 /// Comparison functions (`equal`, `notEqual`, `less`, `lessOrEqual`, `greater`, `greaterOrEqual`) are defined in this library to allow their use as function values in higher-order functions.
 /// Operators like `==`, `!=`, `<`, `<=`, `>`, and `>=` cannot currently be passed as function values.

@@ -2,7 +2,7 @@
 /// 
 /// The class wraps a purely-functional implementation based on a leftist heap.
 /// 
-/// :::note [Constructor details]
+/// :::note Constructor details
 /// The constructor takes in a comparison function `compare` that defines the ordering between elements of type `X`. Most primitive types have a default version of this comparison function defined in their modules (e.g. `Nat.compare`). The runtime analysis in this documentation assumes that the `compare` function runs in `O(1)` time and space.
 /// :::
 /// 

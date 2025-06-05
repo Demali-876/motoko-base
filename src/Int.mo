@@ -5,7 +5,7 @@
 /// This module provides equivalent functions and `Text` conversion.
 /// :::
 /// 
-/// :::info [Function form for higher-order use]
+/// :::info Function form for higher-order use
 /// 
 /// Several arithmetic and comparison functions (e.g. `add`, `sub`, `equal`, `less`, `pow`) are defined in this module to enable their use as first-class function values, which is not possible with operators like `+`, `-`, `==`, etc., in Motoko. This allows you to pass these operations to higher-order functions such as `map`, `foldLeft`, or `sort`.
 /// :::
@@ -111,7 +111,7 @@ module {
     return hash
   };
 
-  /// :::warning [Deprecated function]
+  /// :::warning Deprecated function
   /// 
   /// The function `hash` is deprecated. It computes a hash using only the least significant 32 bits of the `Int`, ignoring the rest.
   /// For large integers, this may lead to hash collisions. Use a bespoke hash function that considers all bits of the value instead.
@@ -127,7 +127,7 @@ module {
     ])
   };
 
-  /// :::warning [Deprecated function]
+  /// :::warning Deprecated function
   /// 
   /// The function `hashAcc` is deprecated. It accumulates a hash using only the least significant 32 bits of the `Int`, ignoring other bits.
   /// This limits its effectiveness for large integers. Prefer using a custom hash function that processes the full integer input.
